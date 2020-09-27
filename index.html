@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Customer Satisfaction Survey</h1>
+        <p id="description">We appreciate your feedback</p>
+        <form id="survey-form">
+            <div id="form-content">
+                
+                <!-- First name label and input -->
+                <p></p>
+                <label id="name-label" for="name">First Name*</label><br>
+                <input type="text" id="name" class="form-input" name="name" placeholder="Enter your first name" required/>
+                
+                <!-- Last name label and input -->                
+                <p></p>
+                <label id="lname-label" for="lname">Last Name*</label><br>
+                <input type="text" id="lname" class="form-input" name="lname" placeholder="Enter your last name" required/>
+                
+                <!-- Email label and input -->                
+                <p></p>
+                <label id="email-label" for="email">Email*</label><br>
+                <input type="email" id="email" class="form-input" placeholder="Enter your primary email address" required/>
+                
+                <!-- Age list with min-max -->                
+                <p></p>
+                <label id="number-label" for="number">Age</label><br>
+                <input type="number" id="number" min="16" max="120" class="form-input" placeholder="Select your age from the list"/>
+                
+                <!-- Profession dropdown -->                
+                <p></p>
+                <label id="profession-label" for="profession">Profession</label><br>
+                <select name="profession" id="dropdown" class="form-input">
+                    <option value="select" class="dropdown-default">Select from the dropdown</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="lawyer">Lawyer</option>
+                    <option value="engineer">Engineer</option>
+                    <option value="hacker">Hacker</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <!-- Gender radio buttons -->                
+                <p></p>                
+                <label id="gender-label" for="gender" required>Gender*</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+                
+                <!-- Service types checkboxes -->                
+                <p>Type(s) of services used (check all that apply)</p>
+                <input type="checkbox" id="website-creation" name="website-creation" value="website-creation">
+                <label for="website-creation">Website Creation</label><br>
+                <input type="checkbox" id="hosting" name="hosting" value="hosting">
+                <label for="hosting">Hosting Services</label><br>
+                <input type="checkbox" id="hardware" name="hardware" value="hardware">
+                <label for="hardware">Hardware Procurement</label><br>
+                <input type="checkbox" id="maintenance" name="maintenance" value="maintenance">
+                <label for="maintenance">Ongoing Maintenance</label><br>
+                <input type="checkbox" id="other" name="other" value="other">
+                <label for="other">Other (Please specify below)</label><br>
+
+                <!-- Explanation of 'Other' -->
+                <textarea id="other-txt" name="other-txt" maxlength="300" placeholder="Please describe in 300 characters or less"></textarea><br>
+                <p></p>
+
+                <!-- Overall ratings -->
+                <p>How would you rate us?</p>
+                <span>Worst</span><input type="range" id="rating" name="rating" min="1" max="10"><span>Best</span>
+                
+                <!-- Final comments? -->
+                <p>Any other comments?</p>
+                <textarea id="additional-comments" name="additional-comments" maxlength="500" placeholder="Please describe in 500 characters or less"></textarea><br>
+
+                <!-- Required fields required-note -->
+                <p class="required-note">Fields marked by * are REQUIRED!</p>
+                
+                <!-- Submit button -->
+                <input type="submit" value="Submit" id="submit">
+                <p></p> 
+            </div>
+             
+        </form>            
+
+    </div>
+
+</body>
+
+</html>

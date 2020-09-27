@@ -1,0 +1,148 @@
+body, html {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    padding: 0px;
+    margin: 0;
+    font-size: 1em;
+    margin: 0;
+    background-image: url("https://github.com/sidsiddiqi/images/blob/master/background2.jpg?raw=true");
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+#title {
+    color: white;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#description {
+    color: white;
+    margin-top: 0;
+    /* padding-top: 30px; */
+    padding-bottom: 5px;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#survey-form{
+background-color: rgb(120, 157, 236);
+max-width: 604px;
+display: flex;
+margin: auto;
+}
+
+#form-content {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    padding-left: 7px;
+    color: white;
+}
+
+.form-input {
+    border: 0;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-height: 30px;
+    min-width: 583px;
+}
+
+#dropdown-default {
+    color: rgb(168, 145, 145);
+}
+
+#male {
+    margin-left: 30px;;
+}
+
+#female {
+    margin-left: 30px;
+}
+
+#other {
+    margin-left: 30px;
+}
+
+#website-creation {
+    margin-left: 30px;
+}
+
+#hosting {
+    margin-left: 30px;
+}
+
+#hardware {
+    margin-left: 30px;
+}
+
+#maintenance {
+    margin-left: 30px;
+}
+
+#other {
+    margin-left: 30px;
+}
+
+#other-txt {
+    margin-left: 30px;
+    min-height: 100px;
+    min-width: 520px;
+}
+
+#rating {
+    margin-left: 5px;
+    margin-right: 5px;
+    min-width: 460px;
+}
+
+#additional-comments {
+    margin-left: 30px;
+    min-height: 100px;
+    min-width: 520px;
+}
+
+.required-note {
+    background-color: rgb(120, 157, 236);
+    border: 1px solid;
+    margin: 30px;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 10px;
+    margin: 
+
+}
+
+#submit {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    position: relative;
+    left: 60%;
+    text-align: center;
+    font-size: 35px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    float: center;
+    transition-duration: 0.4s;
+}
+
+#submit:hover {
+    background-color: #4CAF50;
+}
